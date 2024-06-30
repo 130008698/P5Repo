@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>TowRide - Booking</title>
+		<link rel="stylesheet" href="CSS/styles.css" />
+		<script src="JS/bookingscripts.js" defer></script>
+		<!-- Include jQuery -->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+		<!-- Include jQuery UI -->
+		<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+
+		<!-- jQuery UI CSS (optional, for better styling) -->
+		<link
+			rel="stylesheet"
+			href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css"
+		/>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<a href="index.html">Home Page</a>
+				<a href="services.html">Our service</a>
+				<a href="pricing.html">Price</a>
+				<a href="faq.html">FAQ</a>
+				<a href="contact.html">Contact Us</a>
+				<a href="login.html">Login</a>
+			</nav>
+		</header>
+		<main>
+			<section class="intro">
+				<h1>Make an appointment for HotShot</h1>
+				<a href="booking.html">Booking for TowRide Instead?</a>
+				<div>
+					<input
+						type="text"
+						id="userName"
+						placeholder="Passenger Name"
+						required
+					/>
+					<span id="nameError" class="error-message" style="display: none"
+						>Name is required.</span
+					>
+				</div>
+				<div>
+					<input
+						type="tel"
+						id="userPhone"
+						placeholder="Phone Number"
+						required
+					/>
+					<span id="phoneError" class="error-message" style="display: none"
+						>Phone number is required.</span
+					>
+				</div>
+
+				<div>
+					<button id="locateMe" title="Use my current location">📍</button>
+					<input
+						type="text"
+						id="fromAddress"
+						placeholder="Pickup Location"
+						required
+					/>
+
+					<div id="stopsContainer"></div>
+					<input
+						type="text"
+						id="toAddress"
+						placeholder="Drop off Location"
+						required
+					/>
+				</div>
+				<h2>Package Details</h2>
+				<form>
+					<div class="form-group">
+						<label for="packageType">Package Type:</label>
+						<select id="packageType">
+							<option value="document">Document</option>
+							<option value="parcel">Parcel</option>
+							<option value="bulky">Bulky item</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="quantity">Quantity:</label>
+						<input type="number" id="quantity" min="1" />
+					</div>
+					<div class="form-group">
+						<label for="weight">Weight (LB):</label>
+						<input type="number" id="weight" min="0.1" step="0.1" />
+					</div>
+					<div class="form-group">
+						<label for="dimensions">Dimensions (LxWxH in inch):</label>
+						<input
+							type="text"
+							id="dimensions"
+							placeholder="Length x Width x Height"
+						/>
+					</div>
+				</form>
+				<div>
+					<select id="bookingTime"></select>
+					<button onclick="calculateDistance()">Get price</button>
+				</div>
+				<div id="result"></div>
+				<div id="submitContainer">
+					<input type="submit" id="submitButton" style="display: none" />
+				</div>
+				<div id="map" style="width: 100%; height: 400px"></div>
+			</section>
+		</main>
+		<footer>
+			<p>&copy; 2023 TowRide. All rights reserved.</p>
+		</footer>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2di-JGd0U8np0ipxAcpQQNlEK0AsbvA4&libraries=places"></script>
+		<script src="path/to/update-nav.js"></script>
+	</body>
+</html>

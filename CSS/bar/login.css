@@ -1,0 +1,13 @@
+#submitContainer {
+	display: flex;
+	justify-content: center; /* Aligns children (the button) in the center horizontally */
+	margin-top: 20px; /* Optional: Adds some space above the button */
+}
+
+#submitButton {
+	padding: 10px 20px;
+	background-color: #333;
+	color: white;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}

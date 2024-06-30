@@ -1,0 +1,187 @@
+body {
+	font-family: "Arial", sans-serif;
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	background-color: #333;
+	padding: 10px 0;
+}
+
+nav {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+	padding: 5px 15px;
+}
+
+nav a.active {
+	background-color: #555;
+	border-radius: 5px;
+}
+
+main .intro {
+	text-align: center;
+	padding: 50px 0;
+}
+
+main .introcontact {
+	text-align: center;
+	padding: 25px 0;
+}
+main .faqhead {
+	text-align: center;
+	padding: 10px 0;
+}
+main .towridefaq {
+	color: rgb(227, 125, 0);
+}
+
+main .hotshotfaq {
+	color: rgb(245, 66, 1);
+}
+
+main {
+	padding-bottom: 100px; /* Adjust this value to match the height of your footer */
+}
+footer {
+	background-color: #333;
+	color: white;
+	text-align: center;
+	padding: 10px 0;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+main .intro div {
+	margin: 20px 0;
+}
+
+main .intro input {
+	padding: 10px;
+	margin: 5px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	width: 40%;
+}
+
+main .intro button {
+	padding: 10px 20px;
+	background-color: #333;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+#locateMe {
+	background-color: rgba(222, 209, 209, 0.492);
+}
+main .intro button:hover {
+	background-color: #555;
+}
+
+#stopsContainer div {
+	margin-bottom: 10px; /* Optional: Adds spacing between rows */
+}
+
+.profile-field {
+	padding: 5px;
+}
+
+.profile-field label {
+	font-weight: bold;
+}
+.stopContainer button {
+	margin-right: 5px;
+}
+
+.stopContainer .stop {
+	flex-grow: 1; /* Allows the input field to take up available space */
+	margin-right: 10px; /* Adds some space between the input field and the buttons */
+}
+
+#submitContainer {
+	display: flex;
+	justify-content: center; /* Aligns children (the button) in the center horizontally */
+	margin-top: 20px; /* Optional: Adds some space above the button */
+}
+
+#submitButton {
+	padding: 10px 20px;
+	background-color: #333;
+	color: white;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.error-message {
+	color: red;
+	font-size: 0.8em;
+}
+.edit-profile {
+	text-align: center;
+	margin-top: 20px;
+}
+
+#editProfileButton {
+	padding: 10px 20px;
+	background-color: #000000;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+#editProfileButton:hover {
+	background-color: #0056b3;
+}
+
+.ride-history {
+	max-width: 800px;
+	margin: 20px auto;
+	padding: 20px;
+	background-color: #f8f8f8;
+	border-radius: 10px;
+}
+
+.ride-history h2 {
+	text-align: center;
+	color: #333;
+}
+
+.ride-history table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 10px;
+}
+
+.ride-history th,
+.ride-history td {
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+
+.ride-history th {
+	background-color: #e9e9e9;
+	font-weight: bold;
+}
+
+.ride-history td {
+	text-align: center;
+}

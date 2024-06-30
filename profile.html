@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>TowRide</title>
+		<link rel="stylesheet" href="CSS/styles.css" />
+		<script src="JS/indexscripts.js" defer></script>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<a href="index.html">Home Page</a>
+				<a href="services.html">Our service</a>
+				<a href="pricing.html">Price</a>
+				<a href="faq.html">FAQ</a>
+				<a href="contact.html">Contact Us</a>
+				<a href="profile.html" class="active">My Profile</a>
+			</nav>
+		</header>
+		<main>
+			<div class="edit-profile">
+				<button type="button" id="editProfileButton">Edit Profile</button>
+			</div>
+			<section class="introcontact">
+				<h1>My Profile</h1>
+				<div class="profile-field">
+					<label>Name:</label>
+					<span>Ruiming Chen</span>
+				</div>
+				<div class="profile-field">
+					<label>Email:</label>
+					<span>b150540215@gmail.com</span>
+				</div>
+				<div class="profile-field">
+					<label>Phone Number:</label>
+					<span>2817098525</span>
+				</div>
+				<div class="profile-field">
+					<label>Car Model:</label>
+					<span>Honda CR-V 2018</span>
+				</div>
+			</section>
+			<section class="ride-history">
+				<h2>Ride History</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Date</th>
+							<th>Origin</th>
+							<th>Destination</th>
+							<th>Price</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- Sample Data -->
+						<tr>
+							<td>2023-01-01</td>
+							<td>123 Elm St</td>
+							<td>456 Oak St</td>
+							<td>$35</td>
+						</tr>
+						<tr>
+							<td>2023-02-15</td>
+							<td>789 Pine St</td>
+							<td>321 Maple St</td>
+							<td>$45</td>
+						</tr>
+						<!-- Add more rows as needed -->
+					</tbody>
+				</table>
+			</section>
+		</main>
+		<footer>
+			<p>&copy; 2023 TowRide. All rights reserved.</p>
+		</footer>
+		<script src="path/to/update-nav.js"></script>
+	</body>
+</html>
